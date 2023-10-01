@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(8, 32, 83);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(68, 37, 174);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 20px;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li:hover {
+            background-color: rgb(254, 203, 52);
+            rgb(111, 76, 118)
+        }
+
+        nav ul li a:hover {
+            color: rgb(111, 76, 118);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        #header {
+            position: fixed;
+            z-index: 1;
+            height: 50px;
+            width: 100%;
+            background-color: #5958a9;
+            margin-bottom: 10px;
+            padding-left: 5px;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #resumebody {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        #resumebody div {
+            background-color: rgb(8, 26, 66);
+            border-radius: 10px;
+
+            padding-left: 10px;
+
+        }
+
+        .desc {
+            border-radius: 10px;
+            list-style: none;
+
+            padding-left: 10px;
+        }
+
+        .desc li {
+            margin-top: 5px;
+
+        }
+
+        .profexp {
+
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+
+        tr td {
+            padding-right: 20px;
+        }
+
+        .qualification {
+            border-radius: 10px;
+
+            padding-left: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Kasis's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    
+                    <li><a href="/Port.html">Portfolio</a></li>
+                    <li><a href="/About.html">About</a></li>
+                    <li><a href="/Contact.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div id="header">
+        <p id="name">Kasis Ali Khan</p>
+        <a href="mailto:kasisalikhan5@gmail.com" target="_blank"
+            style="color:rgb(254, 203, 52);text-decoration: none ;">
+            <p id="email">kasisalikhan5@gmail.com</p>
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="heading">
+        <h1>Resume</h1>
+    </div>
+    <div id="resumebody">
+
+        <ul class="desc">
+            <li>Currently a student of BE CSE 3rd year at new horizon college of engineering.</li>
+            <li>Familiar with basic Python, JavaScript, HTML, CSS ,Java , C language</li>
+            <li>An independent, dedicated, efficient person. These attributes are proved through the series of courses I
+                have taken or I am taking as of now independently through online platforms.</li>
+            <li>Good Communication Skills, Presentation Skills, attitude towards leadership, authorisation and
+                delegation, conflict resolution and negotiation and a very good team worker.</li>
+        </ul>
+        <br>
+        <br>
+        <h3>Professional Experience</h3>
+        <div class="profexp">
+
+            <h4 id="company-name">Hindustan aeronautical limited</h4>
+            <p id="job-title"> project intern (ongoing)</p>
+            <br>
+            <h4 id="company-name">Motion cut</h4>
+            <p id="job-title">Web development intern (ongoing)</p>
+
+        </div>
+        <br><br>
+
+        <h3>Educational Qualifications</h3>
+        <div class="qualification">
+
+            <table>
+                <tr id="heading">
+                    <td>Qualification</td>
+                    <td>Board</td>
+                    <td>Percentage / Grades</td>
+                    <td>Year</td>
+                </tr>
+                <tr>
+                    <td>10th class</td>
+                    <td>Kendriya vidyalaya</td>
+                    <td>92.6%</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>12th class</td>
+                    <td>Kendriya vidyalaya</td>
+                    <td>91.4%</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>BE CSE(ongoing)</td>
+                    <td>New horizon college of engineering</td>
+                    <td>97%</td>
+                    <td>-</td>
+                </tr>
+
+            </table>
+        </div>
+        <br><br>
+        <h3>Technical Skills</h3>
+        <div class="techskills">
+
+            <ul class="desc">
+                <li>Java intermediate</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C language</li>
+                <li>Python</li>
+
+            </ul>
+        </div><br><br>
+
+        <h3>Projects</h3>
+        <div class="proj">
+            <ul class="desc">
+                <li> Movie watchlist creator using linked list (C language)</li>
+                <li> E-commerce website for furniture (HTML ,CSS , JavaScript)</li>
+                <li> Bank Management System(swings in Java)</li>
+                <li>Portfolio website(HTML ,CSS,JavaScript)</li>
+                <li>Quiz(Python)</li>
+            </ul>
+        </div><br><br>
+
+
+
+        <h3>Certifications</h3>
+        <div class="cert">
+            <ul class="desc">
+                <li>Programming in Java - NPTEL(ongoing)</li>
+                <li>DSA in java - NPTEL(ongoing)</li>
+                <li>Intermediate python - SoloLearn</li>
+
+            </ul>
+        </div><br><br>
+        <h3>Strengths</h3>
+        <div class="strength">
+            <ul class="desc">
+                <li>Fast learner</li>
+                <li>Team worker</li>
+                <li>Knowledge enthusiast</li>
+                <li>Flexible</li>
+            </ul>
+        </div><br><br>
+        <h3>Languages known</h3>
+        <div class="lang">
+            <ul class="desc">
+                <li>English</li>
+                <li>Hindi</li>
+            </ul>
+        </div><br><br>
+        
+        <h3>Declaration</h3>
+        <p>
+            I hereby declare that the details furnished above are true and correct to the best of my knowledge and
+            belief.</p>
+    
+    </div>
+
+</body>
+
+</html>
+
+
+
+</body>

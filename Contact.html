@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(6, 8, 47);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            font-size: 1.8rem;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            /* background-color: rgb(112, 73, 117) ; */
+            background-color: rgb(68, 37, 174);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 20px;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li:hover {
+            background-color: rgb(254, 203, 52);
+            rgb(111, 76, 118)
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(111, 76, 118);
+
+        }
+
+        .left {
+            font-size: 2.2rem;
+        }
+
+        .container {
+            margin: 30px 50px;
+        }
+
+        .contactbox {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .cbleft {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            flex-basis: 60%;
+            padding: 18px 50px;
+            background-color: rgb(212, 91, 158);
+        }
+
+        .cbright {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            flex-basis: 40%;
+            padding: 18px 50px;
+            background-color: rgb(3, 119, 148);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+        }
+
+        input {
+            color: black;
+        }
+
+        textarea {
+            color: black;
+        }
+
+        input[type=text],
+        input[type=email],
+        select,
+        textarea {
+            width: 100%;
+            /* Full width */
+            padding: 5px;
+            /* Some padding */
+            border: solid #ccc;
+            /* Gray border */
+            border-radius: 4px;
+            /* Rounded borders */
+            box-sizing: border-box;
+            /* Make sure that padding and width stays in place */
+            margin-top: 2px;
+            /* Add a top margin */
+            margin-bottom: 5px;
+            /* Bottom margin */
+            resize: vertical
+                /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        button {
+            background-color: rgb(0, 150, 188);
+            border-style: none;
+            border-radius: 10px;
+            width: 100px;
+            height: 35px;
+            color: white;
+
+
+        }
+
+        button:hover {
+            color: white;
+            font-size: 1.5rem;
+            background-color: rgb(9, 122, 150);
+            
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        tr td:first-child {
+            padding-right: 20px;
+        }
+
+        tr td:first-child {
+            padding-top: 20px;
+        }
+
+        table {
+            margin-top: 10px;
+            font-size: 1.6rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Kasis's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    
+                    <li><a href="/Port.html">Portfolio</a></li>
+                    <li><a href="/About.html">About</a></li>
+                    <li><a href="/Contact.html">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Connect with me</h1>
+                <p>If you have any queries, feel free to contact me</p>
+                <div class="contactbox">
+                    <div class="cbleft">
+                        <h3>Send your message</h3>
+                        <form action="">
+
+                            <div class="input">
+                                <label for="Name">Name</label><br>
+                                <input type="text">
+                            </div>
+
+                            <div class="input">
+                                <label for="Phone">Phone</label><br>
+                                <input type="text">
+                            </div>
+
+                            <div class="input">
+                                <label for="Email">Email </label><br>
+                                <input type="email">
+                            </div>
+                            <div class="input">
+                                <label for="message">Message</label><br>
+                                <textarea id="" cols="30" rows="3"></textarea>
+
+                            </div>
+                            <div class="btn">
+                                <button type="submit" onclick="response()">Send</button>
+                            </div>
+
+
+                        </form>
+                    </div>
+
+                    <div class="cbright">
+                        <h3>Contact me</h3>
+                        <table>
+                            <tr>
+                                <td>
+                                    Email
+                                </td>
+                                <td>
+                                    kasisalikhan5@gmail.com
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Phone
+                                </td>
+                                <td>
+                                    7676756830
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Address
+                                </td>
+                                <td>
+                                    New Horizon College of Engineering, Bengaluru
+
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+
+                </div>
+        </div>
+
+
+        <script>
+            function response() {
+                alert("Thank you for your response.");
+            }
+
+        </script>
+
+</body>
